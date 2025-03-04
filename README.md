@@ -36,7 +36,7 @@ Uploads a new 3D model to the database.
 {
   "name": "Model Name",
   "description": "Model Description",
-  "file": "(binary file data)"
+  "url": "(link)"
 }
 ```
 
