@@ -1,7 +1,8 @@
 const express = require("express")
 const cors = require("cors")
 const { db, storage } = require("./firebase")
-
+const dotenv = require('dotenv');
+dotenv.config();
 const app = express()
 app.use(cors())
 app.use(express.json())
@@ -23,4 +24,4 @@ app.post("/upload", async (req, res) => {
   res.json({ id: newModel.id, name, description, url })
 })
 
-app.listen(2000, () => console.log("Server running on port 2000"))
+app.listen(2001, () => console.log("Server running on port 2001"))
